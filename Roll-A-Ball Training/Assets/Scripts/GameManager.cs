@@ -67,6 +67,7 @@ public class GameManager : MonoBehaviour
     public void WinGame()
     {
         winText.SetActive(true); // Enable our victory text
+        AudioManager.Instance.PlaySound("Win");
         // stop the game 
         GameOver();
     }

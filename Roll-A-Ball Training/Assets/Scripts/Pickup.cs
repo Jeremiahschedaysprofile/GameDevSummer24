@@ -20,6 +20,7 @@ public class Pickup : MonoBehaviour
             Destroy(this.gameObject); // Destroy pickup
             GameManager.Instance.totalPickups -= 1; // Tell GameManager to subtract from the total # of pickups
             GameManager.Instance.UpdateScore(pointValue); // Tell GameManager to update the score by 1
+            AudioManager.Instance.PlaySound("PickUp"); // tell audiomanager to play pickup sound
         }
     }
 

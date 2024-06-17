@@ -76,6 +76,7 @@ public class PlayerController : MonoBehaviour
                 GameManager.Instance.GameOver();
 
                 Destroy(gameObject);
+                AudioManager.Instance.PlaySound("PlayerDeath"); // tell audiomanager to play death sound
             }
         }
     }
